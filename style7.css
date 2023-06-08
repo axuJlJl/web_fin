@@ -1,0 +1,98 @@
+body {
+font-family: 'Roboto', sans-serif;
+}
+h1 {
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(244,159,246,1) 35%, rgba(0,212,255,1) 100%);
+}
+.angry-grid {
+   display: grid; 
+
+   grid-template-rows: 1fr 1fr 1fr;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+   
+   gap: 0px;
+   height: 100%;
+   
+}
+  
+#item-0 {
+   background-image: url(https://avatars.mds.yandex.net/get-mpic/5217690/img_id3418590715268540322.jpeg/orig);
+   
+   height: 200px;
+   width: 200px;
+   border-radius:50px; 
+   gap:20px;
+   background-size:cover;
+   grid-row-start: 1;
+   grid-column-start: 1;
+   text-align:center;
+   grid-row-end: 2;
+   grid-column-end: 2;
+ 
+   
+   
+}
+#item-1 {
+
+   background-image: url(https://avatars.mds.yandex.net/get-mpic/5217690/img_id3418590715268540322.jpeg/orig);
+   height:200px;
+   width: 200px;
+   border-radius:50px; 
+   gap:20px;
+   background-size:cover;
+   grid-row-start: 1;
+   grid-column-start: 2;
+   text-align:center;
+   grid-row-end: 2;
+   grid-column-end: 3;
+   
+}
+#item-2 {
+
+   background-image: url(https://avatars.mds.yandex.net/get-mpic/5217690/img_id3418590715268540322.jpeg/orig);
+   
+   height: 200px;
+   width: 200px;
+   border-radius:200px; 
+   gap:20px;
+   background-size:cover;
+   grid-row-start: 1;
+   grid-column-start: 3;
+   text-align:center;
+   grid-row-end: 2;
+   grid-column-end: 4;
+   
+}
+#item-3 {
+
+   background-image:  url(https://avatars.mds.yandex.net/get-mpic/5217690/img_id3418590715268540322.jpeg/orig);
+   
+   height: 200px;
+   width: 200px;
+   border-radius:50px; 
+   gap:20px;
+   background-size:cover;
+   grid-row-start: 1;
+   grid-column-start: 4;
+   text-align:center;
+   grid-row-end: 2;
+   grid-column-end: 5;
+   
+}
+#hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 10;
+}
+</style>
+
+<div class="angry-grid">
+  <div id="item-0">&nbsp;</div>
+  <div id="item-1">&nbsp;</div>
+  <div id="item-2">&nbsp;</div>
+  <div id="item-3">&nbsp;</div>
+</div>

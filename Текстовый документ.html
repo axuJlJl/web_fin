@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+      <title>change picture</title>
+      <script type = "text/javascript">
+          
+		  function getPosition(e){
+		  var x = y = 0;
+ 
+			if (!e) {
+				var e = window.event;
+			}
+		
+			if (e.pageX || e.pageY){
+				x = e.pageX;
+				y = e.pageY;
+			} else if (e.clientX || e.clientY){
+				x = e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;
+				y = e.clientY + document.body.scrollTop + document.documentElement.scrollTop;
+			}
+		
+			return {x: x, y: y}
+		}
+
+		function displayNextImage() {
+			$('body').mousemove(function(e){
+	var coord = getPosition(e);
+		});
+              if (coord.x<300){
+				document.getElementById("img").src = images[0];
+			  }
+			  else{document.getElementById("img").src = images[4];}
+              
+          }
+
+
+    
+          var images = [], x = -1;
+          images[0] = "влево.jpg";
+          images[1] = "вверх.jpg";
+          images[2] = "вниз.jpg";
+		  images[3] = "вправо.jpg";
+		  
+      </script>
+   </head>
+
+   <body onload = "startTimer()">
+	<div class="verticalcenter"></div>
+       <img id="img" src="startpicture.jpg" width="10%" alt="отцентрированное изображение"/>
+	   <div>
+       <button type="button" onclick="displayNextImage()">Next</button>
+   </body>
+</html><style>
+	.verticalcenter {
+		display: table-cell;
+		height: 300px;
+		text-align: center;
+		width: 300px;
+		vertical-align: middle;
+		
+	}
+	</style>
+
+	
